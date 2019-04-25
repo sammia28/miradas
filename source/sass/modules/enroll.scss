@@ -1,0 +1,89 @@
+
+#container_register{
+  background: #fff;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  h3{
+    font-size: 20px;
+    color: #19BAD1;
+    font-family: 'Raleway-Bold';
+    text-align: center;
+    padding: 35px 0;
+  }
+  .content_register{
+    display: flex;
+    justify-content: space-between;  
+    align-items: baseline;
+    margin: 0 auto;
+    @media screen and (max-width: 640px){
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+    .step{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      width: 245px;
+      padding: 0px 30px;
+      height: 187px;
+      align-items: center;
+      h2{
+        font-size: 25px;
+        font-family: 'Raleway-Bold';
+        color: #19bad1;
+        padding: 15px 0;
+      }
+      p{
+        font-size: 13px;
+        font-family: 'Raleway-Medium';
+        color: #252525;
+      }
+      @media screen and (max-width: 640px){
+        border:none !important;
+      }
+    }
+  }
+  p.account{
+    border: 2px solid #00B3CC;
+    border-radius: 10px;
+    color:#00B3CC;
+    font-size: 20px;
+    font-family: 'Raleway-Medium';
+    text-align: center;
+    width: 93%;
+    margin: 20px auto 5px;
+    padding: 7px;
+    @media screen and (max-width: 420px){
+      width: 100%;
+      border-radius: 0;
+      border: none;
+      border-top: 2px solid #00b3cc;
+      font-size: 16px;
+    }
+  }
+  p.price{
+    border:2px solid #00B3CC;
+    background: #00B3CC;
+    border-radius: 10px;
+    color:#fff;
+    font-size: 20px;
+    font-family: 'Raleway-Medium';
+    text-align: center;
+    width: 93%;
+    margin: 5px auto 20px;
+    padding: 7px;
+    @media screen and (max-width: 420px){
+      width: 100%;
+      border-radius: 0;
+      font-size: 16px;
+      padding: 10px 61px;
+    }
+  }
+}
+
+

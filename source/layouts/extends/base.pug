@@ -1,0 +1,27 @@
+doctype html
+html(lang="es-ES")
+  head
+    meta(charset='utf-8')
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Miradas
+    meta(name='description', content="")
+    meta(name='keywords', content="")
+
+    // Theme color (Only Chrome Mobile)
+    meta(name="theme-color", content="#db5945")
+
+    //Canonical
+    link(rel="canonical", href="http://localhost")
+
+    link(rel='stylesheet', href='css/style.css?v=1.0')
+
+  body
+    block header
+    block content
+    block bottom
+
+    // jQuery Librerias
+    script(src='js/vendor/vendor_all.js?v=1.0', type='text/javascript')
+
+    // Compilado de application.js
+    script(src='js/bundle.js?v=1.2')

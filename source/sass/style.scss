@@ -1,0 +1,22 @@
+@import "globals/normalize";
+@import "globals/variables";
+@import "globals/global";
+@import "extras/slick";
+@import "extras/slick-theme";
+@import "globals/typography";
+@import "extras/jcf";
+
+@import "modules/header";
+@import "modules/layout";
+@import "modules/banner";
+@import "modules/schedule";
+@import "modules/speakers";
+@import "modules/enroll";
+@import "modules/form";
+@import "modules/logo";
+@import "modules/footer";
+
+.container{
+	max-width: 1024px;
+	margin: 0 auto;
+}

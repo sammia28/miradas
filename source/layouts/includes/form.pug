@@ -1,0 +1,16 @@
+#container_form
+  .container
+    .content_form
+      p Completa el siguiente formulario y adjunta el comprobante del depósito realizado.
+      #form
+        form(action="")
+          input(type="text" placeholder="Nombres y apellidos" id="name" name="name")
+          input(type="tel" placeholder="N.º DNI / C.E. / Pasaporte" id="document" name="document")
+          input(type="tel" placeholder="Número de teléfono" id="phone" name="phone")
+          input(type="text" placeholder="Empresa" id="company" name="company")
+          input(type="text" placeholder="Cargo" id="position" name="position")
+          input(type="email" placeholder="Correo electrónico" id="email" name="email")
+          section.demo-file
+            .row
+              input(type='file', data-jcf='{"buttonText": "ADJUNTAR", "placeholderText": "Adjuntar comprobante de depósito"}' id="voucher" name="voucher")
+              input(type="button" id="submit" value="Enviar")

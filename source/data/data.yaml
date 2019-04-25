@@ -1,0 +1,16 @@
+---
+tituloCNE: Lienzo en blanco
+tituloPagina: Lienzo en blanco
+urlCMS: http://cms.movistar.com.pe/web/guest-staging/movil/
+variante: Variante principal
+version: 000292
+ubiContenido: Movil/Productos/Postpago/4G ilimitado
+ubiMultimedia: Movil/Productos/Postpago/4G ilimitado
+external: http://servicios.movistar.com.pe/filesPlanesDisponibles
+comentarios: Comentarios de prueba
+# http://yaml.org/type/map.html -----------------------------------------------#
+
+
+# http://yaml.org/type/timestamp.html -----------------------------------------#
+timestamp:
+  canonical: 2001-12-15T02:59:43.1Z
