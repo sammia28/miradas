@@ -133,7 +133,7 @@
 
 	/* Validación de formulario */
 
-	form = document.getElementById("form");
+	form = document.getElementById("participant");
 	txtNombre = document.getElementsByName("name");
 	txtDni = document.getElementsByName("document");
 	txtEmail = document.getElementsByName("email");
@@ -142,12 +142,12 @@
 	txtPosition = document.getElementsByName("position");
 
 
-	validateGeneral.isValidate(txtNombre, 'text');
-	validateGeneral.isValidate(txtDni, 'numeric');
-	validateGeneral.isValidate(txtEmail, 'email');
-	validateGeneral.isValidate(txtCelular, 'numeric');
-	validateGeneral.isValidate(txtCompany, 'text');
-	validateGeneral.isValidate(txtPosition, 'text');
+	// validateGeneral.isValidate(txtNombre, 'text');
+	// validateGeneral.isValidate(txtDni, 'numeric');
+	// validateGeneral.isValidate(txtEmail, 'email');
+	// validateGeneral.isValidate(txtCelular, 'numeric');
+	// validateGeneral.isValidate(txtCompany, 'text');
+	// validateGeneral.isValidate(txtPosition, 'text');
 
 	$(form).validate({
 	  rules: {
@@ -229,6 +229,53 @@
 	    return $element.removeClass('error');
 	  }
 	});
+
+	function form() {
+	  //var e = $("#submit").serialize();
+	  if($("#participant").valid()){
+	    console.log('si es valido');
+	  }else {
+	    console.log('no es valido');
+	  }
+	}
+
+
+	// $('#submit').click(function (){
+	//     var form_data = new FormData($('#form')[0]);
+	//     $.ajax({
+	//         type: 'POST',
+	//         url: '/api/participant',
+	//         data: form_data,
+	//         headers: {
+	//             'X-CSRFToken': csrftoken
+	//         },
+	//         processData: false,
+	//         contentType: false,
+	//         success: function(data) {
+	//             $('#resultDiv').html(data.company)
+	//         }
+	//     }).fail(function (data) {
+	//         $('#resultDiv').html(data.responseText)
+	//     });
+	// });
+	// function getCookie(name) {
+	//     var cookieValue = null;
+	//     if (document.cookie && document.cookie !== '') {
+	//         var cookies = document.cookie.split(';');
+	//         for (var i = 0; i < cookies.length; i++) {
+	//             var cookie = cookies[i].trim();
+	//             // Does this cookie string begin with the name we want?
+	//             if (cookie.substring(0, name.length + 1) === (name + '=')) {
+	//                 cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+	//                 break;
+	//             }
+	//         }
+	//     }
+	//     return cookieValue;
+	// }
+	// var csrftoken = getCookie('csrftoken');
+
+
 
 /***/ }),
 /* 1 */

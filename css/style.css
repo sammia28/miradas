@@ -2258,7 +2258,7 @@ img.arrow_right {
   flex-direction: column;
   width: 100%; }
   #container_logo .content_logo {
-    max-width: 730px;
+    max-width: 800px;
     width: 100%;
     margin: 0 auto;
     display: -webkit-flex;
